@@ -3,16 +3,20 @@ import logo from './logo.svg';
 import './App.css';
 import Spritechar from './Spritechar';
 
-function App() {
-  return (
-    <div className="App">
+class App extends React.Component {
+  
+  render(){
+    state = {x: 1, y: 1, health: 20}
+    return (
+      <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         Crawler
       </header>
-      <Spritechar />
+      <Spritechar {...state}/>
     </div>
   );
+}
 }
 
 export default App;

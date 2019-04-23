@@ -1,18 +1,17 @@
 import React from "react";
 
-class Spritechar extends React.Component{
+const Spritechar = ({x, y, health}) => {
    
-render(){
  let styles = {
    height: '20px'
  }  
 
   return(
     <div>
-      <img src='https://www.clipartmax.com/png/middle/97-977571_minecraft-clipart-8-bit-legend-of-zelda-8-bit-link.png' style={styles}/>
+      <img src='https://www.nicepng.com/png/full/224-2248272_pixilart-four-swords-link-sprite.png' style={styles}/>
     </div>
   )
 }
-}
+
 
 export default Spritechar;
